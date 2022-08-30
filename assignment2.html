@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- IF…ELSE & ELSE IF	STATEMENTS,	TESTING	SET	OF	CONDITIONS	& SWITCH	STATEMENTS |JAVASCRIPT -->
+
+<body>
+    <script>
+        /*
+
+        // 1.check if num is divisible by 3 or not
+        let num= 11;
+        console.log("Input number "+ num);
+        if(num % 3 === 0) {
+            console.log("Number is divisible by 3");
+        }
+        else {
+            console.log("Number is not divisible by 3");
+        }
+
+        // 2.check if num is even or add
+        if(num % 2 === 0) {
+            console.log("Number is even");
+        }
+        else {
+            console.log("Number is not even");
+        }
+
+        // 3.check if age is greater than 18 
+        let age= prompt("Enter any number");
+        if(age >= 18) {
+            console.log("Old enough");
+        }
+        else {
+            console.log("Too young");
+        }
+
+        // 4.prompts the user for their name
+         var x= prompt("Enter your name");
+         if(x=== "zam") alert("Have a good day");
+
+
+        // 6. check character for uppercase or lowercase
+        var character = prompt('Enter a character');
+        if (character == character.toUpperCase()) {
+            alert('upper case true');
+        }
+        else if (character == character.toLowerCase()) {
+            alert('lower case true');
+        }
+
+
+
+        //8. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements
+        
+        var time= prompt("Enter time in 24 hours clock format like: 1900 = 7pm");
+        if(time>=0000 && time<1200)
+        alert("Good Morning");
+        else if(time>=1200 && time<1700)
+        alert("Good Afternoon");
+        else if(time>=1700 && time<2100)
+        alert("Good Evening");
+        else if(time>=2100 && time<=2359)
+        alert("Good Night");
+
+        // 9. check for leap year
+        let year= prompt("Enter a calendar year in YYYY format");
+        if((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0))
+        alert(year +" is a leap year");
+        else 
+        alert(year +" is not a leap year");
+
+        // 10.password verification
+        var correctPass = "abcdef";
+        var pass = prompt("Enter a password: ");
+        if (pass.length === 0)
+            alert("Please enter your password");
+
+        if (pass.length !== 0)
+            if (correctPass === pass)
+                alert("Correct! The password you entered matches the original password");
+            else
+                alert("Incorrect password");
+
+        // 11.
+        var firstName = "Ali";
+        if (firstName === "Fahad") {
+            document.write("Hello Fahad!");
+        }
+        else
+            document.write("You are not Fahad");
+
+        // 12. fix if else
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day";
+            document.write(greeting);
+        }
+        else {
+            greeting = "Good evening";
+            document.write(greeting);
+        }
+
+
+        // 13. accept two integers and display the larger one
+        let num1=prompt("Enter first integer");
+        let num2=prompt("Enter second integer");
+        if(num1 > num2)
+        document.write("value of first integer is greater"); 
+        else if(num2 > num1)
+        document.write("value of second integer is greater");
+        else
+        document.write("values are equal");
+
+        // 14. state whether the number is positive, negative or zero.
+        let num=prompt("Enter any number ");
+        if(num>0)
+        document.write("Number is positive");
+        else if(num<0)
+        document.write("Number is negative");
+        else
+        document.write("Number is zero");
+
+        // 15. Ask the user what the current hour is, display message accordingly 
+        let hour=prompt("Enter the current hour Hint: Store the hour in 24 hours clock format i.e. 14 for 2pm ");
+        if(hour>=6 && hour<=9)
+        document.write("Breakfast is served");
+        else if(hour>=11 && hour<=13)
+        document.write("Time for lunch");
+        else if(hour>=17 && hour<=20)
+        document.write("Its dinner time");
+        else
+        document.write("Grab a snack");
+
+
+        // 16.store value in a variable & tell the type of that variable
+        let value=5;
+        document.write(typeof value);
+
+        // 17. take a character and tell if its vowel or not
+        let ch=prompt("Enter a character");
+        if(ch==='a'||ch==='e'||ch==='i'||ch==='o'||ch==='u')
+        document.write('Typed character is vowel');
+        else if(ch==='A'||ch==='E'||ch==='I'||ch==='O'||ch==='U')
+        document.write('Typed character is vowel');
+        else
+        document.write('Typed character is consonant');
+
+        // 18. Choose the correct comparison operator when: 10 is NOT equal to 8.
+        let value = 10 != 8;
+        alert(true);
+
+
+        // 19.
+        let month = prompt("Enter any month number");
+        if (month == 1) {
+            alert("january");
+        }
+        else if (month == 2) {
+            alert("feburary");
+        }
+        else if (month == 3) {
+            alert("march");
+        }
+        else if (month == 4) {
+            alert("april");
+        }
+        else if (month == 5) {
+            alert("may");
+        }
+        else if (month == 6) {
+            alert("june");
+        }
+        else if (month == 7) {
+            alert("july");
+        }
+        else if (month == 8) {
+            alert("august");
+        }
+        else if (month == 9) {
+            alert("september");
+        }
+        else if (month == 10) {
+            alert("october");
+        }
+        else if (month == 11) {
+            alert("november");
+        }
+        else if (month == 12) {
+            alert("december");
+        }
+        else {
+            alert("invalid month");
+        }
+
+        // 20. use ternary operator 
+        let age= prompt("Enter your age");
+        let show= age>=18 ? "Old enough" : "Too young";
+        document.write(show);
+*/        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    /*
+        // 1.replace the “Hyder” to “Islam” in the word “Hyderabad” 
+        let city="Hyderabad";
+        let replacement= city.replace("Hyder","Islam");
+        console.log(replacement);
+        
+        
+        // 2. Write a program that converts a string “472” to a number 472. Display the values & types in your browser.
+        let val1="472";
+        console.log("Value= " +val1 + " Type of value= "+typeof val1);
+        console.log("Value= " + Number(val1) + " Type of value= "+typeof Number(val1));
+        
+
+        // 3. Write a program to take password as an input from user.
+        // password must qualify the requirements:
+        let pw = prompt("Enter password");
+        var regExForChar= /[a-zA-Z]/;
+        var regExForNum= /[0-9]/;
+
+        if (pw === "") {
+        console.log("**Fill the password please!");
+         // return false;
+        }
+        else if (pw.length < 8) {
+        console.log("Password length must be atleast 8 characters");
+        // return false;
+        }
+
+        else if(!pw.match(regExForChar)) {
+            console.log("Password should contain alphabets");
+        }
+
+        else if(!pw.match(regExForNum)) {
+            console.log("Password should contain numbers");
+        }
+
+        else if (!isNaN(pw.charAt(0))) {
+            alert("password should not start with a number");
+        }
+        else {
+            alert("Valid password");
+        }
+    */
+                 
+        // 4.Write a program to validate email address
+        let email = prompt("Enter your email address");
+        var regExForChar= /[a-zA-Z]/;
+        var regEx= /[@]/;
+        
+        if (email === "") {
+        console.log("**Enter email please!");
+        }
+        else if(!email.match(regEx)) {
+            console.log("Must contain @"); 
+        }
+
+        else if(!email.match(regExForChar)) {
+            console.log("Email should contain characters");
+        }
+        // else if(!email.charAt(0 ,regExForChar) {
+        //     console.log("The @ must have at least 1 char in front");
+        // }
+
+        else 
+        console.log("Valid email");
+
+    /*         
+        // 5. take input from user and display
+        // a. number
+        // b. round off value of the number
+        // c. floor value of the number
+        // d. ceil value of the number
+        let input=prompt("Enter a positive integer");
+        if(input < 0)
+        console.log("Please enter a positive integer");
+        else {
+        console.log("Number= " +input);
+        console.log("\nRound off value= " + Math.round(input));
+        console.log("\nFloor value= " + Math.floor(input));
+        console.log("\nCeil value= " + Math.ceil(input));
+        }
+                    
+        //6. random dice value
+        var diceRoll1= 6;
+        var diceRoll = Math.floor(Math.random() * 6) + 1;
+        console.log("Dice value1= "+diceRoll1);
+        console.log("Dice value2= "+diceRoll);
+
+        if(diceRoll1 === diceRoll)
+        console.log("Dice values match");
+        else
+        console.log("Dice values does not match");
+               
+ 
+        // 7. count number of occurences of a word
+        var str="The quick brown fox jumps over the lazy dog";
+        str = str.toLowerCase()
+        let count=(str.match(/the/g)).length;
+        document.write(count); 
+   
+    
+        // 9. Remove all available HTML tags from given string
+        var str="<p><strong><em>Only print this</em></strong></p>";
+        console.log(str.slice(15,30));
+
+        
+        // 10. Write a program that round a number to a given decimal places
+        let num1= 16.7652;
+        let num2= 12.379822;
+        let num3= -9.30794999;
+        console.log( num1.toFixed(2));
+        console.log( num2.toFixed(2));
+        console.log( num3.toFixed(4));
+
+
+        // 11. Write a program to take input of a Number and find a Mean of All Digits
+        let userInput = prompt("Enter any number to find its mean");
+        console.log("Number= " + userInput);
+
+        let sum = 0;
+        for (let i = 0; i < userInput.length; i++) {
+            // console.log(userInput[i]);
+            sum = sum + Number(userInput[i]);
+        }
+        // console.log("Sum= "+sum);
+
+        let numCount = userInput.length;
+        // console.log("numcount " +numCount);
+
+        let avg = sum / numCount;
+        console.log('Mean of all digit is: ' + avg);
+
+
+        // 12.Write a program that shows the message “First fifteen days of the
+        // month” if the date is less than the 16th of the month else shows “Last
+        // days of the month”.
+
+        let date = prompt("Enter date");
+        if (date < 16)
+            document.write("First fifteen days of the month");
+        else if (date <= 31)
+            document.write("Last days of the month");
+        else
+            document.write("Invalid Date");
+        
+        // 13.Write a program that determines the minutes since midnight, Jan
+        // 1, 1970 and assigns it to a variable that hasn't been declared
+        // beforehand. Use any variable you like to represent the Date object.
+
+        var d = new Date();
+        var millsSince = d.getTime();
+        console.log("Current Date= " + d);
+        console.log("Ellapsed milliseconds since January 1,1970= " + millsSince);
+        // var mins = d.getMinutes();
+        // console.log("Minutes " + mins);
+
+        // 14.Create a Date object for the current date and time. Extract the hours, reset the date object an hour ahead and finally display the date object in your browser.
+        var d = new Date();
+        console.log("Current Date= " + d);
+        d.setHours(d.getHours() - 1);
+        console.log("1 hour ago it was " + d);
+
+        // 15.Take age as input from user calculate and show birth year
+        let age = prompt("Enter your age");
+        console.log("Your age is " + age);
+        var currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+        var birthYear = currentYear - age;
+        console.log("Your birthyear is " + birthYear); 
+        
+    */
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a program in JS
+        // 1: There are six items in te bakery. (cake , chips , patties , roll , drinks).
+        // 2: Ask from user that what items do you want to purchase.
+        // 3: If user selected item available in the bakery then show that
+        // "That item is available at that index"
+        // 4: If not then show that
+        // "Sorry we don't have that item".
+
+        var bakeryItems = ["cake", "chips", "patties", "roll", "drinks", "biscuits"];
+        // for (var i = 0; i <= 5; i++)
+        // console.log(bakeryItems[i]);
+        var userOrder = prompt("What do you want to purchase");
+        userOrder = userOrder.toLowerCase();
+
+        var matchFound = false;
+        // if(userOrder === "")
+        // alert("Select item");
+
+        for (var i = 0; i <= 5; i++)
+            if (userOrder === bakeryItems[i]) {
+                matchFound = true;
+                alert("The item is available at " + i + " index.");
+                break;
+            }
+
+        if (userOrder === "")
+            alert("Please select any item");
+
+        else if (matchFound === false) {
+            alert("Sorry we dont have that item");
+        }
+
+    </script>
+</body>
+
+</html>
