@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 	FOR	LOOPS PROGRAMS	
+
+        // 1. Write a program to display the message “Hello World” 5 times in your browser using for loop.
+        // var message = "Hello World";
+        // for (var i = 0; i < 5; i++) {
+        //     console.log(message);
+        // }
+
+        // 2. Write a program to print numeric counting from 1 to 10.
+        // for (var i = 1; i <= 10; i++) {
+        //     console.log(i);
+        // }
+
+        // 3. Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user.
+        // let num = prompt("Enter a number to print its multiplication table");
+        // let len = prompt("Enter length of multiplication table");
+        // var regExForNum = /[0-9]/;
+
+        // if (num === "" && len === "") {
+        //     alert("**Please enter any number");
+        // }
+        // else if (!num.match(regExForNum)) {
+        //     alert("Input should be a number");
+        // }
+
+        // else if (!len.match(regExForNum)) {
+        //     alert("Length should be a number");
+        // }
+
+        // else {
+        //     console.log("Multiplication table of " + num);
+        //     console.log("Length " + len);
+        //     for (var j = 1; j <= len; j++) {
+        //         console.log(num + "*" + j + "=" + (num * j))
+        //     }
+        // }
+
+        // // 4. You have an array A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”] Write each element on new line with the help of for loop.
+        // var arr=  ["Nokia", "Samsung", "Apple", "Sony", "Huawei" , 'ahmed'];
+        // for (var i = 0; i < arr.length; i++)
+        // console.log(arr[i]);
+
+        // 5. Write a program to print items of the following array using for loop:
+        // fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+        // var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+        // for (var i = 0; i < fruits.length; i++)
+        // console.log(fruits[i]);
+        // for (var j = 0; j < fruits.length; j++)
+        // console.log("Element at index " +j +" is " +fruits[j]);
+
+        // 6. Write a program to initialize an array of N items by using prompt. Where N is number of items as entered by the user.
+        // var arr = [];
+        // var items = prompt("Enter number of items");
+        // if (!items.match(/[0-9]/))
+        //     console.log("Invalid input");
+
+        // else {
+        //     console.log("Number of items " + items);
+        //     console.log("Items are");
+        //     for (var i = 0; i < items; i++) {
+        //         arr.push(prompt("Enter value for index " + i));
+        //         console.log(arr[i]);
+        //     }
+        // }
+
+        // 7. Generate the following series in your browser.
+        // console.log("Counting");
+        // for (var i = 1; i <= 15; i++) {
+        //     console.log(i);
+        // }
+
+        // console.log("Reverse Counting");
+        // for (var i = 15; i >= 1; i--) {
+        //     console.log(i);
+        // }
+
+        // console.log("Even number");
+        // for (var i = 1; i <= 20; i++) {
+        //     if(i % 2 === 0)
+        //     console.log(i + 'k');
+        // }
+
+        // console.log("Odd number");
+        // for (var i = 1; i <= 15; i++) {
+        //     if(i % 2 !== 0)
+        //     console.log(i);
+        // }
+
+        // 9. Write a program to identify the largest number in the given array.
+        // var a = [24, 53, 78, 91, 12];
+        // var largest = 0;
+        // console.log("Array items: ");
+        // for (var i = 0; i < 5; i++) {
+        //     console.log(a[i]);
+        // }
+        // console.log("Largest is ");
+        // for (i = 0; i < a.length; i++) {
+        //     if (a[i] > largest) {
+        //         largest = a[i];
+        //     }
+        // }
+        // console.log(largest);
+
+        // 10. Write a program to identify the smallest number in the given array.
+        // var a = [24, 53, 78, 91, 12];
+        // var largest = 0;
+        // console.log("Array items: ");
+        // for (var i = 0; i < 5; i++) {
+        //     console.log(a[i]);
+        // }
+        // console.log("Smallest is ");
+        // const min = Math.min(...a)
+        // console.log(min);
+
+        // // 11. Write a program to identify the largest & the smallest number in the given array.
+        // var a = [24, 53, 78, 91, 12];
+        // var largest = 0;
+        // console.log("Array items: ");
+        // // for (var i = 0; i < 5; i++) {
+        // //     console.log(a[i]);
+        // // }
+        // console.log("Largest is ");
+        // for (i = 0; i < a.length; i++) {
+        //     if (a[i] > largest) {
+        //         largest = a[i];
+        //     }
+        // }
+        // console.log(largest);
+
+        // console.log("Smallest is ");
+        // const min = Math.min(...a)
+        // console.log(min);
+
+        // 12. Write a program to print multiples of 5 ranging 1 to 100
+        // console.log("Multiples of 5");
+        // for (var i = 1; i <= 100; i++) {
+        //     if(i % 5 === 0)
+        //     console.log(i);
+        // }
+
+        // 14. Write a program that prints number from start of the array to desired stop value.
+        // var scores = [12, 45, 3, 22, 34, 50];
+        // var userInput = prompt("Enter stop value ");
+
+        // for (var i = 0; i < scores.length; i++) {
+        //     if (userInput === scores[i]) {
+        //         var value = scores[i];
+        //         console.log(value);
+        //     }
+
+
+        
+        //     for (var j = 0; j < scores.length; j++)
+
+        // }
+
+
+        // if (userInput > )
+        //     alert("Invalid input ");
+
+        // for (var i = 0; i < userInput; i++)
+        //     console.log(scores[i]);
+
+
+        // 15. Write each element on new line with the help of nested for loops.
+        // var a = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+        // for(var i=0; i < a.length; i++){
+        //     console.log("row " + i);
+        //     for(var j=0; j < a[i].length; j++) {
+        //         console.log(" " + a[i][j]);
+        //     }
+        // }
+
+        // 16. Write a program to repeatedly print the value of the variable num which is input by user. Value should be decreasing by 0.5 each time, as long as x Value remains positive.
+        // var num = prompt("Enter number");
+
+        // while (num >= 0) {
+        //     console.log(num)
+        //     num = num - 0.5;
+        // }
+        //     for( ; num>=0; num-=0.5)
+        //    console.log(num);
+
+        // 17. The even/odd reporter
+        // for (var i = 0; i <= 20; i++) {
+        //     if (i % 2 === 0) {
+        //         console.log(i + " is even");
+        //     }
+        //     else {
+        //         console.log(i + " is odd");
+        //     }
+        // }
+
+        // 18. Write a program to calculate the product of the odd integers from 1 to 7.
+        // var p = 1;
+        // for (var n = 1; n <= 7; n++)
+        //     if (n % 2 == 1) {
+        //         p = p * n;
+        //     }
+        // console.log("Product fo odd integers from 1 to 7 = " + p);
+
+        // 19. Write a program that will write out a wedge of stars. The user will enter the initial number of stars, and the program will write out lines of stars where each line has one few star than the previous line.
+        // var userInput = prompt("Enter initial number of stars ");
+        // for (var i = 0; i < userInput; i++) {
+        //     for (var j = 0; j < userInput - i; j++) {
+        //         console.log("*");
+        //         document.write("*");
+        //     }
+        //     console.log("\n");
+        //     document.write("\n");
+        // }
+
+        // 20. Write a program to create the following patterns in your browser. Take number of lines as an input.
+        // var userInput = prompt("Enter initial number of stars ");
+        // console.log("Pattern 1");
+        // document.write("Pattern 1");
+        // for (var i = 0; i < userInput; i++) {
+        //     for (var j = 0; j < userInput; j++) {
+        //         console.log("*");
+        //         document.write("*");
+        //     }
+        //     console.log("\n");
+        //     document.write("\n");
+        // }
+
+        // console.log("Pattern 2");
+        // document.write("Pattern 2");
+        var userInput = prompt("Enter initial number of stars ");
+        for (var i = 1; i <= userInput ; i++) {
+            for (var j = 0; j < i ; j++) {
+                console.log("*");
+                // document.write("*");
+            }
+            console.log("\n");
+            // document.write("\n");
+        }
+
+    </script>
+</body>
+
+</html>
