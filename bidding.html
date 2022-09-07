@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="coinsHeader"></h1>
+    <input type="text" id="bid_amount" placeholder="Enter bid amount"><br><br>
+    <input type="text" id="bid_number" placeholder="Enter bid number from 1-6"><br><br>
+    <button onclick="play()" id="play-btn"> Play </button>
+
+    <script>
+        var coins = 1000;
+        var coinsHeader = document.getElementById("coinsHeader");
+        coinsHeader.innerHTML = coins;
+        
+        var btn = document.getElementById("play-btn");
+        var userBidAmount = document.getElementById("bid_amount");
+        var userBidNumber = document.getElementById("bid_number");
+
+        function play() {
+            var randomNumber = Math.floor(Math.random() * 6) + 1;
+            var bidAmount = userBidAmount.value;
+            var bidNumber = userBidNumber.value;
+
+            console.log(bidAmount);
+            console.log("user bid number " + bidNumber);
+            console.log("random bid number " + randomNumber);
+
+            if (coins > 0) {
+                if (bidNumber === randomNumber) {
+                    var winningAmount = coins + bidAmount;
+                    console.log("You won " + winningAmount);
+                    coins = winningAmount;
+                    coinsHeader.innerHTML = coins;
+
+                }
+                else if (bidNumber !== randomNumber) {
+                    var deduct = coins - bidAmount;
+                    console.log("Deducted amount " + deduct);
+                    coins = deduct;
+                    coinsHeader.innerHTML = coins;
+                }
+            }
+
+            else {
+                btn.disabled = true;
+            }
+
+
+        };
+
+    </script>
+</body>
+
+</html>
